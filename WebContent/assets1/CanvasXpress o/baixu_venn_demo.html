@@ -1,0 +1,120 @@
+
+<html>
+
+  <head>
+
+    <title>Venn</title>
+    <!--[if lt IE 9]><script type="text/javascript" src="./js/flashcanvas.js"></script><![endif]-->
+    <script type="text/javascript" src="./js/canvasXpress.min.js"></script>
+
+    <script id='demoScript'>
+
+      var showDemo = function () {
+
+        var cx1 = new CanvasXpress('canvas1',
+          {
+            'venn': {
+              'data': {
+                'A': 340,
+                'B': 562,
+                'C': 620,
+                'D': 592,
+                'AB': 639,
+                'AC': 456,
+                'AD': 257,
+                'BC': 915,
+                'BD': 354,
+                'CD': 143,
+                'ABC': 552,
+                'ABD': 578,
+                'ACD': 298,
+                'BCD': 613,
+                'ABCD': 148
+              },
+              'legend': {
+                'A': 'List 1',
+                'B': 'List 2',
+                'C': 'List 3',
+                'D': 'List 4'
+              }
+            }
+          },
+          {'graphType': 'Venn',
+          'vennGroups': 4}
+        );
+
+        var cx2 = new CanvasXpress('canvas2',
+          {
+            'venn': {
+              'data': {
+                'A': 340,
+                'B': 562,
+                'C': 620,
+                'D': 592,
+                'AB': 639,
+                'AC': 456,
+                'AD': 257,
+                'BC': 915,
+                'BD': 354,
+                'CD': 143,
+                'ABC': 552,
+                'ABD': 578,
+                'ACD': 298,
+                'BCD': 613,
+                'ABCD': 148
+              },
+              'legend': {
+                'A': 'List 1',
+                'B': 'List 2',
+                'C': 'List 3',
+                'D': 'List 4'
+              }
+            }
+          },
+          {'graphType': 'Venn',
+          'vennGroups': 3}
+        );
+
+        var cx3 = new CanvasXpress('canvas3',
+          {
+            'venn': {
+              'data': {
+                'A': 340,
+                'B': 562,
+                'C': 620,
+                'D': 592,
+                'AB': 639,
+                'AC': 456,
+                'AD': 257,
+                'BC': 915,
+                'BD': 354,
+                'CD': 143,
+                'ABC': 552,
+                'ABD': 578,
+                'ACD': 298,
+                'BCD': 613,
+                'ABCD': 148
+              },
+              'legend': {
+                'A': 'List 1',
+                'B': 'List 2',
+                'C': 'List 3',
+                'D': 'List 4'
+              }
+            }
+          },
+          {'graphType': 'Venn',
+          'vennGroups': 2}
+        );
+
+      }
+
+    </script>
+
+  </head>
+
+  <body onload="showDemo();">
+  <canvas id='canvas1' width='540' height='540'></canvas>
+  <canvas id='canvas2' width='540' height='540'></canvas>
+  <canvas id='canvas3' width='540' height='540'></canvas>
+  </body>
